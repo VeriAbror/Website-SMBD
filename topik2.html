@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Topik 2 - Manajemen User, Role, Privilege</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4" style="color: #2F327D;">Topik 2: Manajemen User, Role, Privilege</h1>
+      
+      <!-- Latar Belakang -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Latar Belakang</h2>
+        <p>
+          Dalam sistem manajemen basis data, pengelolaan user, role, dan privilege sangat penting untuk memastikan keamanan dan efisiensi akses data. 
+          Dengan manajemen yang baik, administrator dapat mengontrol siapa yang dapat mengakses data, apa yang dapat mereka lakukan, dan bagaimana mereka melakukannya.
+        </p>
+      </section>
+
+      <!-- Problem -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Problem</h2>
+        <p>
+          Tanpa manajemen user, role, dan privilege yang baik, sistem database rentan terhadap akses tidak sah, manipulasi data, dan pelanggaran keamanan. 
+          Hal ini dapat menyebabkan kerugian besar, terutama dalam sistem yang menangani data sensitif seperti keuangan atau informasi pribadi.
+        </p>
+      </section>
+
+      <!-- Solusi/Skenario Aktivitas -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Solusi/Skenario Aktivitas</h2>
+        <p>
+          Berikut adalah langkah-langkah untuk mengelola user, role, dan privilege di MySQL:
+        </p>
+        <ol>
+          <li>Membuat user baru dengan perintah <code>CREATE USER</code>.</li>
+          <li>Memberikan hak akses (privilege) menggunakan perintah <code>GRANT</code>.</li>
+          <li>Membuat role untuk mengelompokkan privilege tertentu.</li>
+          <li>Memberikan role kepada user menggunakan perintah <code>GRANT ROLE</code>.</li>
+          <li>Melihat daftar user, role, dan privilege menggunakan perintah <code>SHOW GRANTS</code>.</li>
+        </ol>
+      </section>
+
+      <!-- Pembahasan -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Pembahasan</h2>
+        <p>
+          Berikut adalah contoh implementasi manajemen user, role, dan privilege di MySQL:
+        </p>
+        <pre style="background-color: #F8F9FA; padding: 15px; border-radius: 5px;">
+-- Membuat user baru
+CREATE USER 'user_baru'@'localhost' IDENTIFIED BY 'password123';
+
+-- Memberikan hak akses SELECT pada database tertentu
+GRANT SELECT ON smbd_database.* TO 'user_baru'@'localhost';
+
+-- Membuat role baru
+CREATE ROLE 'read_only';
+
+-- Memberikan hak akses ke role
+GRANT SELECT ON smbd_database.* TO 'read_only';
+
+-- Memberikan role kepada user
+GRANT 'read_only' TO 'user_baru'@'localhost';
+
+-- Melihat hak akses user
+SHOW GRANTS FOR 'user_baru'@'localhost';
+        </pre>
+        <p>
+          Dengan langkah-langkah di atas, administrator dapat mengelola akses user dengan lebih efisien dan memastikan keamanan data.
+        </p>
+      </section>
+
+      <!-- Laporan Lengkap -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Laporan Lengkap</h2>
+        <p>Berikut adalah laporan lengkap tentang solusi dan pembahasan:</p>
+        <iframe src="files/topic2.pdf" width="100%" height="600px" style="border: 1px solid #ddd;"></iframe>
+      </section>
+
+      <!-- Kesimpulan -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Kesimpulan</h2>
+        <p>
+          Manajemen user, role, dan privilege adalah aspek penting dalam pengelolaan database. Dengan menerapkan langkah-langkah yang tepat, 
+          administrator dapat memastikan bahwa hanya user yang berwenang yang dapat mengakses data, sehingga meningkatkan keamanan dan efisiensi sistem.
+        </p>
+      </section>
+
+      <!-- Sumber Referensi -->
+      <section class="mb-5">
+        <h2 style="color: #5F99AE;">Sumber Referensi</h2>
+        <ul>
+          <li><a href="https://dev.mysql.com/doc/" target="_blank">MySQL Documentation</a></li>
+          <li><a href="https://www.mysql.com/" target="_blank">MySQL Official Website</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Tombol Kembali -->
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-primary">Kembali ke Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-3" style="background-color: #F8F9FA; color: #2F327D;">
+      <p>© 2025 Veri Abror Hadi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
