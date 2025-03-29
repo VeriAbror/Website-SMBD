@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #5F99AE;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">SMBD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#jumbotronku" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#topic">LearningTopics</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+    <!-- Jumbotron -->
+    <div id="jumbotronku" class="container-fluid" style="height: 750px; background: linear-gradient(to right, #5F99AE, #c0e3ed);">
+        <div class="container" style="height: 100%;">
+          <div class="row align-items-center" style="height: 100%;">
+            <div class="col-6">
+              <h1 style="color: #FFFFFF;">Website <span style="color: #FFD700;">SMBD</span></h1>
+              <p style="color: #FFFFFF;">Website for Sistem Manajemen Basis Data Using MySQL Server</p>
+              <a href="#topic" class="btn text-white fw-bold" style="background-color: #FFD700;">Get Started</a>
+            </div>
+            <div class="col-6">
+              <img src="img/mysql.png" class="img-fluid" alt="MySQL" style="clip-path: circle(40%);">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Jumbotron -->
+    <!-- Profile -->
+    <div id="profile" class="container-fluid mt-4" style="height: 600px;" data-aos="fade-up">
+        <div class="container d-flex align-items-center" style="height: 100%;background: linear-gradient(to right,#5F99AE,#c0e3ed); ">
+          <div class="row w-100">
+            <div class="col-md-4 text-center">
+              <img src="img/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 200px; height: 200px;">
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+                <div style="font-family: 'Poppins', sans-serif;">
+                    <h1 style="color: #FFD700;">👋 Hello,</h1>
+                    <h2 style="color: #2F327D;">My Name is <span style="color: #17183d;">Veri Abror Hadi</span></h2>
+                    <hr style="border: 1px solid #5F99AE; width: 50%; margin: 10px 0;">
+                    <p style="color: black; font-size: 1.1rem;">🎓 I am a student passionate about database management and web development.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Profile -->
+    <!-- Topics -->
+    <div id="topic" class="container-fluid mt-4" style="height: auto;">
+        <div class="container">
+            <h1 class="text-center" style="color: #2F327D;" data-aos="zoom-in-up">Learning Topics</h1>
+          <div class="row mt-4 g-0">
+            <!-- Topic 1 -->
+            <div class="col-6 d-flex align-items-center" data-aos="fade-right" style="background: linear-gradient(to right, #2F327D, #17183D); color: #FFFFFF; padding: 20px;">
+                <div>
+                  <h3>Topic 1</h3>
+                  <h5>Instalasi dan Konfigurasi Server Database</h5>
+                  <p>Memahami proses instalasi, langkah - langkah dalam konfigurasi server database MySQL.</p>
+                  <a href="topik1.html" class="btn btn-light fw-bold">Learn More</a>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-stretch" data-aos="fade-left">
+                <img src="img/book.jpg" alt="Book" class="img-fluid" style="object-fit: cover; width: 100%;">
+            </div>
+            <!-- Topic 2 -->
+            <div class="col-6 d-flex align-items-stretch" data-aos="fade-right">
+                <img src="img/book.jpg" alt="Book" class="img-fluid" style="object-fit: cover; width: 100%;">
+            </div>
+            <div class="col-6 d-flex align-items-center" data-aos="fade-left" style="background: linear-gradient(to right, #2F327D, #17183D); color: #FFFFFF; padding: 20px;">
+                <div>
+                  <h3>Topic 2</h3>
+                  <h5>Manajemen User, Role, Privilege</h5>
+                  <p>Manajemen akun pengguna, hak ases atau privilege pengguna, role manajemen, monitoring akses dan aktivitas pengguna.</p>
+                  <a href="topik2.html" class="btn btn-light fw-bold">Learn More</a>
+                </div>
+            </div>
+            <!-- Topic 3 -->
+            <div class="col-6 d-flex align-items-center" data-aos="fade-right" style="background: linear-gradient(to right, #2F327D, #17183D); color: #FFFFFF; padding: 20px;">
+                <div>
+                  <h3>Topic 3</h3>
+                  <h5>Database Performance</h5>
+                  <p>Pemeliharaan database dan table, penggunaan index dalam menjaga performa database.</p>
+                  <a href="topik3.html" class="btn btn-light fw-bold">Learn More</a>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-stretch" data-aos="fade-left">
+                <img src="img/book.jpg" alt="Book" class="img-fluid" style="object-fit: cover; width: 100%;">
+            </div>
+            <!-- Topic 4 -->
+            <div class="col-6 d-flex align-items-stretch" data-aos="fade-right">
+                <img src="img/book.jpg" alt="Book" class="img-fluid" style="object-fit: cover; width: 100%;">
+            </div>
+            <div class="col-6 d-flex align-items-center" data-aos="fade-left" style="background: linear-gradient(to right, #2F327D, #17183D); color: #FFFFFF; padding: 20px;">
+                <div>
+                  <h3>Topic 4</h3>
+                  <h5>Optimasi Database - Partisi Tabel</h5>
+                  <p>Optimasi basis data bertujuan untuk meningkatkan kinerja dalam mengakses, memproses, dan
+                    menyimpan data. Partisi tabel digunakan untuk membagi tabel besar menjadi beberapa bagian yang lebih kecil
+                    berdasarkan kriteria tertentu.</p>
+                  <a href="topik4.html" class="btn btn-light fw-bold">Learn More</a>
+                </div>
+            </div>
+            <!-- Topic 5 -->
+            <div class="col-6 d-flex align-items-center" data-aos="fade-right" style="background: linear-gradient(to right, #2F327D, #17183D); color: #FFFFFF; padding: 20px;">
+                <div>
+                  <h3>Topic 5</h3>
+                  <h5>Bottleneck pada MySQL</h5>
+                  <p>Bottleneck dalam MySQL adalah kondisi di mana kinerja database mengalami penurunan karena
+                    keterbatasan sumber daya atau masalah dalam eksekusi query.</p>
+                  <a href="topik5.html" class="btn btn-light fw-bold">Learn More</a>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-stretch" data-aos="fade-left">
+                <img src="img/book.jpg" alt="Book" class="img-fluid" style="object-fit: cover; width: 100%;">
+            </div>
+            <!-- Topic 6 -->
+            
+          </div>
+        </div>
+    </div>
+    <!-- End Topics -->
+    
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-3 " style="background-color: #F8F9FA; color: #2F327D;">
+        <p>© 2025 Veri Abror Hadi</p>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+      });
+    </script>
+  </body>
+</html>
